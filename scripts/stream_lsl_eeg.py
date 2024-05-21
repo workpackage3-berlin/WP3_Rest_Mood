@@ -68,10 +68,6 @@ try:
         # Load the EEG channel set and configuration
         print("load EEG config")
         dev.import_configuration(join(configs_dir, "juliette_eeg_config_changed_ref.xml"))
-        #if dev.get_num_channels()<64:
-            #dev.import_configuration(join(configs_dir, "juliette_saga_config_EEG32.xml"))
-        #else:
-            #dev.import_configuration(join(configs_dir, "saga_config_EEG64.xml"))        
 
         # Check if there is already a plotter application in existence
         app = QApplication.instance()
