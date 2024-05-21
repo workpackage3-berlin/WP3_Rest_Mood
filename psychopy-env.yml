@@ -1,0 +1,15 @@
+name: psychopy
+channels:
+- conda-forge
+dependencies:
+- python=3.8
+- pip
+- pip:
+  - psychtoolbox
+  - psychopy
+  - pygame
+  - pyo
+  - pylsl
+  - pyparallel; platform_system != "Windows"
+  - SoundFile; platform_system == "Windows"
+  - websocket_client
