@@ -35,7 +35,7 @@ from psychopy.hardware import keyboard
 
 from pylsl import StreamInfo, StreamOutlet
 # Set up LabStreamingLayer stream.
-info = StreamInfo(name='PsychoPy_LSL_Rest', type='Markers', channel_count=1, nominal_srate=0, channel_format='string', source_id='psy_marker')
+info = StreamInfo(name='Psychopy', type='Markers', channel_count=1, nominal_srate=0, channel_format='string', source_id='psy_marker')
 outlet = StreamOutlet(info)  # Broadcast the stream.
 
 # --- Setup global variables (available in all functions) ---
@@ -102,7 +102,8 @@ def setupData(expInfo, dataDir=None):
     # data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
     if dataDir is None:
         dataDir = _thisDir
-    filename = u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])
+    filename = u'data/%s_%s_%s_%s' % (expInfo['participant'], expInfo['session'], expName, expInfo['date'])
+
     # make sure filename is relative to dataDir
     if os.path.isabs(filename):
         dataDir = os.path.commonprefix([dataDir, filename])
