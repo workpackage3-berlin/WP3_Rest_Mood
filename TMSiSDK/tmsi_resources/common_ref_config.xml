@@ -11,13 +11,13 @@
     <ConfiguredInterface>4</ConfiguredInterface>
     
     
-    <Triggers>0</Triggers>
+    <Triggers>1</Triggers>
     
     
     <ReferenceMethod>0</ReferenceMethod>
     
     
-    <AutoReferenceMethod>0</AutoReferenceMethod>
+    <AutoReferenceMethod>1</AutoReferenceMethod>
     
     
     <DRSyncOutDiv>-1</DRSyncOutDiv>
@@ -1079,7 +1079,7 @@
       <AltChanName>X</AltChanName>
       
       
-      <ChanDivider>-1</ChanDivider>
+      <ChanDivider>1</ChanDivider>
       
     
     </Channel>
@@ -1094,7 +1094,7 @@
       <AltChanName>Y</AltChanName>
       
       
-      <ChanDivider>-1</ChanDivider>
+      <ChanDivider>1</ChanDivider>
       
     
     </Channel>
@@ -1109,7 +1109,7 @@
       <AltChanName>Z</AltChanName>
       
       
-      <ChanDivider>-1</ChanDivider>
+      <ChanDivider>1</ChanDivider>
       
     
     </Channel>
@@ -1349,7 +1349,7 @@
       <AltChanName>TRIGGERS</AltChanName>
       
       
-      <ChanDivider>-1</ChanDivider>
+      <ChanDivider>1</ChanDivider>
       
     
     </Channel>
